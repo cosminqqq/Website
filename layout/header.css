@@ -1,0 +1,701 @@
+
+/* Header styles 
+	Header content: wrapper */
+header {
+	background: linear-gradient(to right, #048ba8 0%,#16da93 100%);
+	min-height: 800px;
+}
+
+/* Wrapping of logo, nav */
+
+.wrapper {
+
+	position: relative;
+	height: 100%;
+	margin: 0 auto;
+	}
+	
+.wrapper::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Applilicous Logo */
+
+.logo {
+float: left;
+width: 25%;
+max-width: 15em;
+min-width: 10em;
+padding: 10px 10px 10px 40px;
+}
+
+.logo img {
+	margin-top: 12px;
+}
+
+/* Navigation bar */
+
+nav {
+	margin-right: 2.4em;
+	height: auto;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 97px;
+	text-align: center;
+	float: right;
+	}
+	
+nav ul a:hover {
+	background: rgba(255,255,255,.1);
+	}
+	
+nav a {
+	font-weight: 600;
+    color: white;
+    margin-left: 30px;
+    padding: 6px;
+}
+
+.aStyle {
+	text-decoration: none;
+}
+
+.liStyle {
+	list-style-type: none;
+}
+
+/* Design header-content */
+
+.header-content {
+	margin-left: 50px;
+    width: 55%;
+    padding: 10px;
+	margin-top: 10%;
+}
+
+.header-content h1 {
+	font-weight: 300;
+	color: white;
+	font-size: 2.65em;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.header-content h1 span {
+	font-weight: 900;
+	}
+
+.header-content p { font-weight: 400; color: white; }
+
+
+/* Header-content's phone-image */
+
+img.main-phone { 
+	position: absolute;
+    top: 17%;
+    right: 7%;
+	height: 60vw;
+    width: 30%;
+	}
+
+	/* Btn prototype */
+.btn_proto {
+		display: inline-block;
+		font-size: .95em;
+		font-weight: 500;
+		cursor: pointer;
+		color: white;
+		text-align: center;
+		border: 2px solid #fff;
+		padding: 1.1em 3em;
+		text-transform: uppercase;
+	}
+	
+	/* Header's btn1,btn2 */
+
+	.btn1:hover {
+	background-color: white;
+	color: #048ca8;
+}
+
+.btn2 {
+	background-color: #d31869;
+	border-color: #d31869;
+}
+
+.btn2:hover {
+	background-color: #8e1047;
+	border-color: #8e1047;
+}
+
+	/* Style main section with 3 assides */
+
+	section.main {
+	text-align: center;
+	padding: 0 3em 10em 3em;
+}
+
+	section.main::after {
+		content: "";
+		display: block;
+		clear: both;
+}
+	
+	/* Setting all 3 asides float left */
+	section.main aside { 
+	float: left;
+	display: inline-block;
+	width: 33%;
+ }
+
+	/* Styleing text h1,h2,p */
+	section.main h1 {
+	margin-top: 3em;
+	font-weight: 300;
+	letter-spacing: 2px;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	color: #048ca8;
+} 
+ 
+	section.main h2 {
+	margin-top: 0;
+	font-size: 1.4em;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #048ca8;
+}
+
+	section.main p {
+	color: #048ca8;
+	margin: 0;
+}
+ 
+ /* Position the div's in each aside */
+ 
+section.main aside div {
+	margin: 0 10px 10px 10px;
+	padding: 10px;
+}
+
+	/* Section grid-two-sides */
+
+.grid-two-sides {
+	display: grid;
+	color: white;
+	max-height: 800px;
+	grid-template-columns: 50% 50%;
+	background: #048ca8;
+}
+
+	/* Rebuild grid-two-sides for IE */
+	
+.gird-two-sides {
+	display: block;
+	}
+	
+	/* Setting each side */
+
+.grid-left {
+	text-align: left;
+	padding: 10%;
+	padding: 7em 4em;
+	padding-top: 7.5em;
+		
+}
+
+.grid-right {
+	background: url(../img/phone-in-hand.jpg) no-repeat;
+	background-size: cover;
+}
+
+	/* Style the text of left grid */
+	
+.grid-header-h1 {
+	font-weight: 300;
+	font-size: 2em;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.grid-header-h2 {
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+	/* grid-left btn */
+
+.grid-btn {
+	background-color: #d31869;
+	border-color: #d31869;
+}
+
+.grid-btn:hover {
+	background-color: #8e1047;
+	border-color: #8e1047;
+}
+
+/* Position moto between section main and section grid-two-sides */
+
+.moto-ahead {
+	background-color: #d31869;
+	position: absolute;
+	width: 60vw;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 1;
+}
+
+.moto-ahead h1 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2em;
+	line-height: 30px;
+	letter-spacing: 3px;
+}
+
+	/* Section promo */
+	
+.promo {
+	position: relative;
+	background-image: url(../img/call-to-action-background.jpg);
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-color: rgb(22, 219, 147);
+	padding: 10em 0;
+	color: white;
+	overflow: hidden;
+} 
+
+	/* .promo::before, .promo::after diagonal design */
+
+.promo::before {
+    content: "";
+    top: 1px;
+	right: 100%;
+    transform: skewX(50deg);
+    display: block;
+    position: absolute;
+    border-right: 20px solid #fff;
+    background: #d31869;
+    width: 100%;
+    height: 100%;
+	z-index: 10;
+}
+
+.promo::after {
+    content: "";
+    top: 0;
+	right: -100%;
+    transform: skewX(50deg);  
+    display: block;
+    position: absolute;
+    border-left: 20px solid #fff;
+    background: #d31869;
+    width: 100%;
+    height: 100%;
+	z-index: 10;
+}
+
+	/* The main div of this section */
+
+.promo-content {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+	/* Content of promo section */
+
+.promo-btn {
+	background-color: #d31869;
+	border-color: #d31869;
+}
+
+.promo-btn:hover {
+	background-color: #8e1047;
+	border-color: #8e1047;
+}
+
+.promo-header {
+	font-weight: 900;
+	letter-spacing: 3px;
+	font-size: 3em;
+	line-height: 1;
+	margin-top: 0px;
+	text-transform: uppercase;
+}
+
+.promo-paragraph {
+	margin-top: 0;
+	
+}
+
+  /* Footer of the web page */
+
+footer {
+	background: url(../img/logo-footer.svg) no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: #444444;
+	color: #fff;
+	text-align: center;
+}
+
+	/* Content of footer */
+
+.header-footer-h1 {
+	font-weight: 300;
+	display: inline-block;
+	font-size: 1.5em;
+	padding-top: 2.2em;
+	margin: 0;
+}
+
+	/* h1 wrapping borders */
+
+.header-footer-h1::before {
+    content: "";
+    display: inline-block;
+    border: .5px solid #6f6c6c;
+    transform: translateX(-5%);
+    margin-bottom: -11px;
+    width: 110%;
+}
+
+.header-footer-h1::after {
+    content: "";
+    display: inline-block;
+    border: .5px solid #6f6c6c;
+    transform: translateX(-5%);
+    margin-bottom: 25px;
+    width: 110%;
+}
+
+	/* A navigation bar of footer icons */
+	
+.ul-footer-icons li {
+	display: inline-block;
+	padding: 0 3em 0 0;
+}
+
+.ul-footer-icons li a i {
+	color: #dbdbdb;
+	font-size: 3em;
+}
+	
+	/* The main navigation-bar of the footer */
+	
+.nav-footer ul { margin: 0; padding: 20px 0;}
+
+.nav-footer ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px;
+}
+
+.nav-footer a {
+	margin: 0 auto;
+	font-size: .9em;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+}
+
+	footer::after {
+	content: "";
+	display: block;
+	clear: both;
+	}
+	
+	/* Adjust screen 800max height	*/
+	@media screen and (max-width: 800px) {
+			/* Remove main-phone */
+			
+			.main-phone{
+				display: none;
+				} 
+			.header-content {
+				width: 80%;
+			}
+			
+			.wrapper {
+				left: 0;
+			}
+			
+			/* Display taking logo and logo.music
+			*/
+			.logo { width: 25%;
+					max-width: 15em;
+					min-width: 10em;
+					display: block;
+					margin: 0 auto;
+					float:unset !important;
+					padding: 0;
+				}
+				
+			.logo img { margin-top: 42px; }
+			
+			/* Set nav bar/ul/li/a */
+			
+			nav {
+				background: #d31869;
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				font-size: 1.2rem;
+				overflow: hidden;
+				display: none;
+			}
+
+																											
+			/* Set nav bar/ul/li/a */
+			nav ul {
+				    display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					height: 100vh;
+					padding: 0;
+				}
+				
+			/* Set nav bar/ul/li/a */
+			nav ul li {
+				background: #d31869;
+				flex: 1 1 auto;
+				width: 100%;
+				height: 20%;
+				border-bottom: 1px solid #a31150;
+				
+			}
+			
+			/* Set nav bar/ul/li/a */
+			nav ul li a {
+				height: 100%;
+				align-items: center;
+				flex-basis: 100%;
+				display: grid;
+			}
+			
+			
+			/* Hamburger wrapper */
+			.icon {
+				position: absolute;
+				right: 0;
+				top: 10px;
+				right: 10px;
+				width: 50px;
+				height: 25px;
+				z-index: 1; 
+				}
+			
+			/* Position hamburger's position */
+			.hamburger { top: 10px; }
+			.hamburger::before { top: -10px; }
+			.hamburger::after { top: 10px; }		
+			.hamburger, .hamburger:before, .hamburger:after {border-radius: 15px; background: #fff; content: "";
+														position: absolute; height: 5px; width: 50px; }	
+			
+			/* open-nav class created to open the nav */
+			.open-nav { overflow: visible; display: block !important; margin-right: 0; left: 0%; width: 100%; }
+			
+			.btn_proto { font-size: 0.85em; }
+			.header-content h1 { font-size: 2.35em; }
+			 section.main aside { width: 100%; padding-top: 20px;  }
+			 section.main { padding: 0 0em 10em 0em; }
+			.moto-ahead h1 { font-size: 1.5em }
+			.moto-ahead p { font-size: .9em }
+			
+				/* Grid's header and paragraphs stabilise  */
+			.grid-header-h1 { font-size: 1.8em; letter-spacing: 2px; }
+			.grid-header-h2 { font-size: 1em; letter-spacing: 1.7px; }	
+			.grid-paragraph { font-size: 0.92; }
+			.grid-paragraph { font-size: 0.92; }
+			.grid-paragraph { font-size: 0.92; }
+			
+			/* Promo's css border-cut trick */
+			.grid-two-sides { grid-template-columns: 100%; }
+			.grid-right { display: none; }
+			.promo::after { right: -135%; }
+			.promo::before { right: 130%; }	
+			
+			}
+			
+			/* media queries for smallest screens */
+	@media only screen and (min-width: 200px) and (max-width: 480px) {
+			
+			.logo { width: 25%; max-width: 15em; min-width: 10em; display: block; margin: 0 auto; float:unset !important; padding: 0; }
+			.logo img { margin-top: 50px; }		
+					
+			/* Toggle nav-bar */
+			.hamburger, 
+			.hamburger::before,
+			.hamburger::after { width: 35px; right: 0px;}
+	
+			.btn_proto { padding: 1.1em 1.8em; }
+					
+			/* Resize header content */
+			.header-content { margin: 0; padding: 25px; }
+			.header-content h1 { font-size: 1.4em; line-height: 33px; padding-right: 0; }
+			
+			/* Resize section grid content  */
+			.grid-left { font-size: 1.4em; line-height: 40px; margin-top: 0; letter-spacing: 2px; padding: 0; text-align: center; }
+			.grid-header-h1 { font-size: 1em; letter-spacing: 1px; padding: 15px; }
+			.grid-header-h2 { font-size: .7em; letter-spacing: .6px; font-weight: 400; line-height: 25px; padding: 0 15px 15px 15px; }
+			.grid-paragraph { font-size: 0.6em; font-weight: 300; padding: 0 15px 15px 15px; line-height: 18px; }
+			.grid-btn { padding: .3em 1em; font-size: .7em; margin-bottom: 10px; }
+					
+			/* Remove angle cutters && resize content */
+			.promo::before,
+			.promo::after { content: unset !important; }
+			.promo-header { letter-spacing: 2px; font-size: 1.5em; font-weight: 700; }
+			.promo-content { position: relative; width: 85%; margin: 0 auto; text-align: center; }
+			.promo-paragraph { font-size: 1em; margin-top: -30px; }
+			.promo-btn { padding: 1.1em 2em; }
+					
+			/* Footer's Header and ICONS list */
+			.header-footer-h1 { font-size: 1.2em; } 
+			.header-footer-h1::before, 
+			.header-footer-h1::after { content: unset !important; }
+					
+			.ul-footer-icons { padding: 20px; margin: 0;}
+			.ul-footer-icons li { display: inline-block; padding: 0 1em 0 0; }
+					
+			/* Footer's nav-bar */
+			.nav-footer ul { padding-top: 0; }
+			.nav-footer ul li { padding: 0 0 0 10px; }
+					
+		}
+		
+							
+		
+			/* Makeing the website responsive of IE 10+ */
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {	 		
+
+				/* Asurring the height of the section "grid-two-sides"*/
+				
+				.grid-two-sides {
+					position: relative;
+					display: block;
+					}
+				.grid-two-sides::after {
+					content: '';
+					display: block;
+					clear: both;
+					width: 50px;
+					height: 50px;
+					
+				}
+				/* Reset grid Styles*/
+				
+				.grid-right,
+				.grid-left{ margin: 0; padding: 0; }
+				
+				/* Rearrange right&left grid */
+				.grid-left { display: inline-block; width: 50%; height: 600px; }
+				.grid-right { display: inline-block; width: 50%; height: 688px; position: absolute; }
+				
+				/* Create artificial background-blend-mode: multiply */
+				.ie-cover {
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+					width: 100%;
+					height: 100%;
+					background: red;
+					z-index: 1;
+					background-color: rgba(22, 219, 147, 0.7);
+				}
+				
+				/* Rearrange content in right-grid */
+				.grid-header-h1 { padding: 100px 50px 0 50px; }
+				.grid-header-h2 { padding: 0 50px 0 50px; }
+				.grid-paragraph { padding: 0 50px 0px 50px; }
+				.grid-btn { margin-left: 50px; }
+				.moto-ahead {z-index: 100;}
+				
+				.promo-content { z-index: 10; }
+				.promo { background-color: rgba(22, 219, 147, 0.7);  }
+}
+				
+				@media only screen and (max-width: 800px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+				
+				/* Center logo */
+				.logo { 
+						width: 25%;
+						max-width: 25em;
+						min-width: 10em;
+						display: block;
+						height: 72px;
+						margin-left: 50%;
+						transform: translateX(-50%);
+						padding: 10px 0 0 0;
+						
+					}
+			
+				/* Remove grid-right picture, expand grid-left and style content */
+				.grid-right { display: none !important; }
+				.grid-left	{ width: 80%; padding: 100px 50px 0 70px; }	
+				.grid-header-h1 { padding: 70px 50px 0 50px}
+				
+				/* Resize corner-cutter */
+				.promo::before {right: 140%; } .promo::after { right: -140%; } 
+				
+					
+				}
+				
+				@media only screen and (min-width: 220px) and (max-width: 480px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+				
+				.logo { 
+						width: 25%;
+						max-width: 25em;
+						min-width: 10em;
+						display: block;
+						height: 72px;
+						margin-left: 50%;
+						transform: translateX(-50%);
+						padding: 10px 0 0 0;
+						
+					}	
+				section.main { padding: 0 1em 10em 1em }	
+					
+				.grid-left	{ width: 80%; padding: 50px 0 0 20px; }	
+				.grid-header-h1, .grid-header-h2, .grid-paragraph { padding: 0; }
+				.grid-btn { margin-left: 0px; }
+				
+	
+				.promo::before {right: 300%; } .promo::after { right: -300%; }
+			
+						
+			}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
